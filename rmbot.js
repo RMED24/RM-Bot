@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 
+
 const client = new Discord.Client();
 
 const prefix = '-';
@@ -18,6 +19,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Woah the bot is online');
+    client.user.setActivity('on a server somewhere')
 });
 
 client.on('message', message =>{
@@ -28,6 +30,10 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);  
+    }else if(command === 'enc'){
+        client.commands.get('base64enc').execute(message, args);
+    }else if(command === 'dec'){
+        client.commands.get('base64dec').execute(message, args);
     }
 
 });
