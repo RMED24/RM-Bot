@@ -4,7 +4,7 @@ module.exports = {
     
     execute(message, args){
   
-        let data = 'SGVsbG8gV29ybGQ=';
+        let data = message.content.toString;
         let buff = new Buffer(data);
         let base64data = Buffer.from(data, 'base64').toString('ascii');
         

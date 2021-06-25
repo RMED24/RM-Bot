@@ -6,5 +6,8 @@ base64enc
 base64dec
 music commands (yes, sorry Tryharder)
 kick
-mute
 warn
+mute
+import warns (yes, I am sure this can be possible)
+purger
+import levels from Wooloo (and maybe other bots too in the future idk)
