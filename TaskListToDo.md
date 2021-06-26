@@ -8,9 +8,9 @@ base64enc
 
 base64dec
 
-music commands (yes, sorry Tryharder)
-
 kick
+
+music commands (yes, sorry Tryharder)
 
 warn
 
