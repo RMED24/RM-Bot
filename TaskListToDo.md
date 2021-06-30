@@ -4,10 +4,6 @@ automod (filter words and spam)
 
 ban
 
-base64enc
-
-base64dec
-
 kick
 
 music commands (yes, sorry Tryharder)
