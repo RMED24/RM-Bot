@@ -19,7 +19,7 @@ for(const file of commandFiles){
 
 client.once('ready', () => {
     console.log('Woah the bot is online');
-    client.user.setAvatar('https://cdn.discordapp.com/icons/818595833607094273/b50e1b288d1362347ce5dbf753e64af8.png')
+//    client.user.setAvatar('To change the avatar, you need a link and to remove the forward brackets at the start')
     client.user.setActivity('Nothing because I am a bot')
 });
 

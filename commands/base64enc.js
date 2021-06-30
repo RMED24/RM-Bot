@@ -4,10 +4,12 @@ module.exports = {
     
     execute(message, args){
   
-        let data = 'Hello';
+        let data = message.content;
+        data = data.substring(5);
+        console.log(data); // here to make sure the output is working correctly. Will be removed once base64 testing is complete
         let buff = new Buffer.from(data);
         let base64data = buff.toString('base64');
-        
-        message.channel.send('"' + data + '" converted to Base64 is "' + base64data + '"');
+        message.delete();
+        message.channel.send(base64data);
     }
 }

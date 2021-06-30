@@ -3,11 +3,14 @@ module.exports = {
     description: "A Base64 decoder!",
     
     execute(message, args){
-  
-        let data = 'SGVsbG8gV29ybGQ=';
+
+        let data = message.content;
+        data = data.substring(5);
+        console.log(data); // here to make sure the output is working correctly. Will be removed once base64 testing is complete
         let buff = new Buffer.from(data);
-        let base64data = Buffer.from(data, 'base64').toString('ascii');
+        let asciidata = Buffer.from(data, 'base64').toString('ascii');
         
-        message.channel.send('"' + data + '" converted to ASCII (standard text) is "' + base64data + '"');
+        message.author.send(asciidata);
+        message.channel.send('Check your DMs for the result')
     }
 }
