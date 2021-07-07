@@ -31,10 +31,30 @@ client.on('message', message =>{
 
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);  
-    }else if(command === 'enc'){
+    }
+    
+    else if(command === 'enc'){
         client.commands.get('base64enc').execute(message, args);
-    }else if(command === 'dec'){
+    }
+    
+    else if(command === 'dec'){
         client.commands.get('base64dec').execute(message, args);
+    }
+    
+    else if(command === 'ban'){
+        client.commands.get('ban').execute(message, args);
+    }
+    
+    else if(command === 'kick'){
+        client.commands.get('kick').execute(message, args);
+    }
+
+    else if(command === 'purge'){
+        client.commands.get('purge').execute(message, args);
+    }
+
+    else if(command === 'help'){
+        client.commands.get('help').execute(message, args);
     }
 
 });

@@ -3,13 +3,16 @@ module.exports = {
     description: "A Base64 encoder!",
     
     execute(message, args){
-  
+        
         let data = message.content;
+        if(data = "-enc") return message.reply("You need to input a string after using ``-enc``");
+
         data = data.substring(5);
-        console.log(data); // here to make sure the output is working correctly. Will be removed once base64 testing is complete
         let buff = new Buffer.from(data);
         let base64data = buff.toString('base64');
         message.delete();
         message.channel.send(base64data);
+
+        console.log(data + " converted to " + base64data); // here to make sure the output is working correctly. Will be removed once base64 testing is complete
     }
 }
