@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'ban',
     description: "A command to ban a server member!",
@@ -15,3 +16,6 @@ module.exports = {
 
     }
 }
+
+(Commenting this just in case the command trigger somehow slips through)
+*/

@@ -1,3 +1,5 @@
+/*
+
 module.exports = {
     name: 'kick',
     description: "A command to kick a server member!",
@@ -15,3 +17,6 @@ module.exports = {
         }
     }
 }
+
+(Commenting this just in case the command trigger somehow slips through)
+*/

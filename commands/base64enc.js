@@ -5,7 +5,6 @@ module.exports = {
     execute(message, args){
         
         let data = message.content;
-        if(data = "-enc") return message.reply("You need to input a string after using ``-enc``");
 
         data = data.substring(5);
         let buff = new Buffer.from(data);

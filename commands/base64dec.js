@@ -5,7 +5,6 @@ module.exports = {
     execute(message, args){
 
         let data = message.content;
-        if(data = "-dec") return message.reply("You need to input a string after using ``-dec``");
 
         data = data.substring(5);
         let buff = new Buffer.from(data);

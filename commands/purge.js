@@ -1,3 +1,4 @@
+/*
 module.exports = {
     name: 'purge',
     description: "A command to clear multiple messages at once!",
@@ -15,3 +16,6 @@ module.exports = {
             
         }
 }
+
+(Commenting this just in case the command trigger somehow slips through)
+*/
